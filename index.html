@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="E-Commerce VSL Video Editor — Direct-response video editing focused on hooks, retention, storytelling, and conversion.">
+  <title>E-Commerce VSL Editor | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <div class="nav__inner container">
+      <a href="#" class="nav__logo" data-name></a>
+      <nav class="nav__links" aria-label="Main navigation">
+        <a href="#work">WORK</a>
+        <a href="#vsls">VSLs</a>
+        <a href="#process">PROCESS</a>
+        <a href="#about">ABOUT</a>
+      </nav>
+      <a href="#contact" class="nav__cta btn btn--accent magnetic">HIRE ME →</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="navMobile" aria-hidden="true">
+      <a href="#work">WORK</a>
+      <a href="#vsls">VSLs</a>
+      <a href="#process">PROCESS</a>
+      <a href="#about">ABOUT</a>
+      <a href="#contact" class="btn btn--accent">HIRE ME →</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="container hero__grid">
+        <div class="hero__content reveal">
+          <p class="eyebrow">E-COMMERCE VSL EDITOR</p>
+          <h1 class="hero__title">I EDIT VIDEOS<br>THAT <span class="accent">SELL.</span></h1>
+          <p class="hero__sub">Turning raw footage, UGC and product assets into high-retention e-commerce VSLs.</p>
+          <p class="hero__focus">
+            <span class="hero__focus-static">Direct-response video editing focused on</span>
+            <span class="hero__focus-slot">
+              <span class="hero__focus-sizer" aria-hidden="true">product education</span>
+              <span class="hero__focus-word is-active" id="heroFocusWord">hooks</span>
+            </span>
+          </p>
+          <div class="hero__actions">
+            <a href="#work" class="btn btn--accent magnetic">WATCH MY WORK →</a>
+            <a href="#contact" class="btn btn--ghost magnetic">HIRE ME →</a>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator" aria-hidden="true">
+        <span>SCROLL</span>
+        <div class="scroll-indicator__line"></div>
+      </div>
+    </section>
+
+    <!-- Selected Work -->
+    <section class="section" id="work">
+      <div class="container">
+        <div class="section__header reveal">
+          <h2 class="section__title">SELECTED VSL WORK</h2>
+          <p class="section__sub">A selection of e-commerce creatives built to capture attention and move viewers toward action.</p>
+        </div>
+        <div class="projects" id="projectsGrid"></div>
+      </div>
+    </section>
+
+    <!-- VSL Breakdown -->
+    <section class="section section--timeline" id="vsls">
+      <div class="container">
+        <div class="section__header reveal">
+          <h2 class="section__title">I DON'T JUST EDIT.<br>I BUILD THE <span class="accent">STORY.</span></h2>
+          <p class="section__sub">Every cut has a purpose — stop the scroll, maintain attention, communicate the mechanism, build desire, and drive action.</p>
+        </div>
+        <div class="timeline" id="timeline">
+          <div class="timeline__preview">
+            <video id="timelineVideo" muted loop playsinline preload="metadata"></video>
+            <div class="timeline__preview-overlay"></div>
+          </div>
+          <div class="timeline__stages" id="timelineStages"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section class="section" id="process">
+      <div class="container">
+        <div class="section__header reveal">
+          <h2 class="section__title">MY VSL EDITING <span class="accent">PROCESS</span></h2>
+        </div>
+        <div class="process-grid" id="processGrid"></div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section section--about" id="about">
+      <div class="container">
+        <div class="about reveal">
+          <div class="about__image">
+            <img id="aboutPhoto" src="" alt="Editor portrait" loading="lazy">
+          </div>
+          <div class="about__content">
+            <h2 class="section__title">THE EDITOR BEHIND <span class="accent">THE SCREEN.</span></h2>
+            <p class="about__bio" id="aboutBio"></p>
+            <div class="about__toolkit">
+              <h3>TOOLKIT</h3>
+              <ul id="aboutToolkit"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="section section--cta" id="contact">
+      <div class="container">
+        <div class="cta reveal">
+          <h2 class="cta__title">HAVE A PRODUCT WORTH <span class="accent">SELLING?</span></h2>
+          <p class="cta__sub">Let's turn your next script into a VSL people actually want to watch.</p>
+          <div class="cta__actions">
+            <a href="#" class="btn btn--accent btn--lg magnetic" id="ctaEmail">HIRE ME →</a>
+            <a href="#work" class="btn btn--ghost btn--lg magnetic">VIEW MY WORK</a>
+          </div>
+          <div class="cta__contact">
+            <div class="cta__contact-item">
+              <span class="cta__contact-label">EMAIL</span>
+              <a href="#" id="contactEmail"></a>
+            </div>
+            <div class="cta__contact-item">
+              <span class="cta__contact-label">LINKEDIN</span>
+              <a href="#" id="contactLinkedin" target="_blank" rel="noopener"></a>
+            </div>
+            <div class="cta__contact-item">
+              <span class="cta__contact-label">DISCORD / WHATSAPP</span>
+              <span id="contactDiscord"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__left">
+        <span class="footer__name" data-name></span>
+        <span class="footer__role">E-Commerce VSL Editor</span>
+      </div>
+      <nav class="footer__links">
+        <a href="#work">WORK</a>
+        <a href="#about">ABOUT</a>
+        <a href="#contact">CONTACT</a>
+      </nav>
+    </div>
+    <div class="container footer__bottom">
+      <p>© 2026 <span data-name></span>. ALL RIGHTS RESERVED.</p>
+    </div>
+  </footer>
+
+  <!-- Project Modal -->
+  <div class="modal" id="projectModal" aria-hidden="true" role="dialog" aria-labelledby="modalTitle">
+    <div class="modal__backdrop" id="modalBackdrop"></div>
+    <div class="modal__content">
+      <button class="modal__close" id="modalClose" aria-label="Close modal">&times;</button>
+      <div class="modal__video-wrap">
+        <video id="modalVideo" controls playsinline preload="metadata"></video>
+      </div>
+      <div class="modal__body">
+        <span class="modal__category" id="modalCategory"></span>
+        <h2 class="modal__title" id="modalTitle"></h2>
+        <p class="modal__desc" id="modalDesc"></p>
+        <div class="modal__meta">
+          <div><strong>Role</strong><span id="modalRole"></span></div>
+          <div><strong>Tools</strong><span id="modalTools"></span></div>
+        </div>
+        <div class="modal__breakdown">
+          <h3>EDITING BREAKDOWN</h3>
+          <ul id="modalBreakdown"></ul>
+        </div>
+        <div class="modal__results" id="modalResults"></div>
+        <a href="#contact" class="btn btn--accent magnetic modal__cta">HIRE ME →</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
